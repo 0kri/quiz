@@ -87,6 +87,9 @@ label div {
 
 .next-question button{
     height: 25%;
+    width: 150px;
+    border: none;
+    background-image: linear-gradient(to right, #d2ee83, #cff174, #cbf564, #c8f852, #c3fb3c, #bff933, #bcf727, #b8f519, #b5ed23, #b2e52a, #afde30, #acd635);
 }
 
 .hidden-div {

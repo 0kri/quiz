@@ -14,8 +14,8 @@
 .container {
     max-width: 1320px;
     margin: 0 auto;
-    max-height: 100vh;
-    border: 1.5px groove #ffffff;
+    height: 100vh;
+    background-color: #ffffff;
 }
 
 .image-wrapper img, .question-wrapper {
@@ -36,8 +36,9 @@
 .answers-wrapper{
 } */
 
-form{
+form {
     width: 100%;
+    height: 25vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -47,7 +48,7 @@ form{
 .answer1-wrapper,.answer2-wrapper,.answer4-wrapper, .answer3-wrapper {
     width: 40%;
     height: 70px;
-    margin: 25px 15px 0 15px;
+    margin: 20px 15px 0 15px;
     border: 1.5px groove #d8dbd0;
     border-radius: 7px;
     box-shadow: 0 0 5px #d8dbd0 inset;
@@ -67,5 +68,28 @@ label div {
 }
 
 .count-wrapper {
-    margin-top: 20vh
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.next-question {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.total-count{
+    margin-bottom: 35px;
+}
+
+.next-question button{
+    height: 25%;
+}
+
+.hidden-div {
+    width: 25%;
+    height: 100%;
 }

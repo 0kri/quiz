@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: quiz;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: quiz;
+    src: url(fonts/Cat-Boys.ttf);
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    max-height: 100vh;
+    border: 1.5px groove #ffffff;
+}
+
+.image-wrapper img, .question-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+
+.question-wrapper {
+    border: 1.5px groove #96be25;
+    border-radius: 7px;
+    box-shadow: 0 0 5px #96be25 inset;
+}
+/* 
+.answers-wrapper{
+} */
+
+form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer1-wrapper,.answer2-wrapper,.answer4-wrapper, .answer3-wrapper {
+    width: 40%;
+    height: 70px;
+    margin: 25px 15px 0 15px;
+    border: 1.5px groove #d8dbd0;
+    border-radius: 7px;
+    box-shadow: 0 0 5px #d8dbd0 inset;
+    display: flex;
+    align-items: center;
+}
+
+label div {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: #afd447;
+    justify-content: center;    
+    align-items: center;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.count-wrapper {
+    margin-top: 20vh
+}

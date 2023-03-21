@@ -83,12 +83,26 @@ label div {
 
 .total-count{
     margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fill {
+    margin-top: 15px;
+    width: 300px;
+    height: 15px;
+    background-color: #96be25;
+    border-radius: 9px;
 }
 
 .next-question button{
     height: 25%;
-    width: 150px;
-    border: none;
+    width: 200px;
+    border-radius: 4px;
+    border: 1.5px groove #d8dbd0;
+    box-shadow: 0 0 5px #d8dbd0 inset;
     background-image: linear-gradient(to right, #d2ee83, #cff174, #cbf564, #c8f852, #c3fb3c, #bff933, #bcf727, #b8f519, #b5ed23, #b2e52a, #afde30, #acd635);
 }
 
@@ -96,3 +110,4 @@ label div {
     width: 25%;
     height: 100%;
 }
+

@@ -71,33 +71,49 @@ function next(){
 }
 
 function checkAnswer1(){
-    if (answer1.innerHTML == questions.correct_answer){
+    if (answer1.textContent == questions[index].correct_answer){
         answer1Btn.style.backgroundColor = "green"
-    } else if(answer4.innerHTML !== questions.correct_answer){
+    } else {
         answer1Btn.style.backgroundColor = "red"
-    }
-} 
+    }   
+}
 
 function checkAnswer2(){
-    if (answer2.innerHTML === questions.correct_answer){
+    if (answer2.textContent == questions[index].correct_answer){
         answer2Btn.style.backgroundColor = "green"
     } else {
         answer2Btn.style.backgroundColor = "red"
-    }
+    }   
 }
 
 function checkAnswer3(){
-    if (answer3.innerHTML === questions.correct_answer){
+    if (answer3.textContent == questions[index].correct_answer){
         answer3Btn.style.backgroundColor = "green"
     } else {
         answer3Btn.style.backgroundColor = "red"
-    }
+    }   
 }
 
 function checkAnswer4(){
-    if (answer4.innerHTML === questions.correct_answer){
+    if (answer4.textContent == questions[index].correct_answer){
         answer4Btn.style.backgroundColor = "green"
-    } else if(answer4.innerHTML !== question.correct_answer){
+    } else {
         answer4Btn.style.backgroundColor = "red"
-    }
+    }   
 }
+
+// function checkAnswer3(){
+//     if (answer3.innerHTML === questions.correct_answer){
+//         answer3Btn.style.backgroundColor = "green"
+//     } else {
+//         answer3Btn.style.backgroundColor = "red"
+//     }
+// }
+
+// function checkAnswer4(){
+//     if (answer4.innerHTML === questions.correct_answer){
+//         answer4Btn.style.backgroundColor = "green"
+//     } else if(answer4.innerHTML !== question.correct_answer){
+//         answer4Btn.style.backgroundColor = "red"
+//     }
+// }

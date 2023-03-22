@@ -73,7 +73,13 @@ function next(){
 function checkAnswer(){
     if (answer1.innerHTML === question.correct_answer){
         answer1Btn.style.backgroundColor = "green"
+    } else if(answer2.innerHTML === question.correct_answer){
+        answer1Btn.style.backgroundColor = "green"
+    } else if(answer3Btn.style.backgroundColor = "green"){
+        answer3Btn.style.backgroundColor = "green"
+    } else if(answer4Btn.style.backgroundColor = "green"){
+        answer4Btn.style.backgroundColor = "green"
     } else {
-        answer1Btn.style.backgroundColor = "red"
+        
     }
-}
+} 

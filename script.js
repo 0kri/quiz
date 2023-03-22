@@ -74,12 +74,10 @@ function checkAnswer(){
     if (answer1.innerHTML === question.correct_answer){
         answer1Btn.style.backgroundColor = "green"
     } else if(answer2.innerHTML === question.correct_answer){
-        answer1Btn.style.backgroundColor = "green"
-    } else if(answer3Btn.style.backgroundColor = "green"){
+        answer2Btn.style.backgroundColor = "green"
+    } else if(answer3.innerHTML === question.correct_answer){
         answer3Btn.style.backgroundColor = "green"
-    } else if(answer4Btn.style.backgroundColor = "green"){
+    } else if(answer4.innerHTML === question.correct_answer){
         answer4Btn.style.backgroundColor = "green"
-    } else {
-        
-    }
+    } 
 } 

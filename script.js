@@ -8,7 +8,12 @@ let btn = document.querySelector("#btn")
 let index = 0
 let countIndex = 1
 let totalPoints = 100
-
+let loadingPart1 = document.querySelector(".loading-part1")
+let loadingPart2 = document.querySelector(".loading-part2")
+let loadingPart3 = document.querySelector(".loading-part3")
+let loadingPart4 = document.querySelector(".loading-part4")
+let loadingPart5 = document.querySelector(".loading-part5")
+let loading = [loadingPart1, loadingPart2, loadingPart3, loadingPart4, loadingPart5]
 //
 
 let questions = [
@@ -45,6 +50,7 @@ answer2.innerHTML = questions[index].choices[1]
 answer3.innerHTML = questions[index].choices[2]
 answer4.innerHTML = questions[index].choices[3]
 count.innerHTML = `Question ${countIndex} / 5`
+loadingPart1.style.opacity = "1"
 
 //
 
@@ -57,5 +63,6 @@ function next(){
     answer3.innerHTML = questions[index].choices[2]
     answer4.innerHTML = questions[index].choices[3]
     count.innerHTML = `Question ${countIndex} / 5`
+    loading[index].style.opacity = "1"
 }
 

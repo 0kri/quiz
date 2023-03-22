@@ -53,7 +53,7 @@ answer1.innerHTML = questions[index].choices[0]
 answer2.innerHTML = questions[index].choices[1]
 answer3.innerHTML = questions[index].choices[2]
 answer4.innerHTML = questions[index].choices[3]
-count.innerHTML = `Question ${countIndex} / 5`
+count.innerHTML = `Question ${countIndex} / ${questions.length}`
 loadingPart1.style.opacity = "1"
 
 //
@@ -66,7 +66,7 @@ function next(){
     answer2.innerHTML = questions[index].choices[1]
     answer3.innerHTML = questions[index].choices[2]
     answer4.innerHTML = questions[index].choices[3]
-    count.innerHTML = `Question ${countIndex} / 5`
+    count.innerHTML = `Question ${countIndex} / ${questions.length}`
     loading[index].style.opacity = "1"
 }
 

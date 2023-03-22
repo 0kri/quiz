@@ -7,6 +7,7 @@ let count = document.querySelector("#count")
 let btn = document.querySelector("#btn")
 let index = 0
 let countIndex = 1
+let totalPoints = 100
 
 //
 
@@ -57,3 +58,4 @@ function next(){
     answer4.innerHTML = questions[index].choices[3]
     count.innerHTML = `Question ${countIndex} / 5`
 }
+

@@ -13,6 +13,10 @@ let loadingPart2 = document.querySelector(".loading-part2")
 let loadingPart3 = document.querySelector(".loading-part3")
 let loadingPart4 = document.querySelector(".loading-part4")
 let loadingPart5 = document.querySelector(".loading-part5")
+let answer1Btn = document.querySelector(".answer1-wrapper")
+let answer2Btn = document.querySelector(".answer2-wrapper")
+let answer3Btn = document.querySelector(".answer3-wrapper")
+let answer4Btn = document.querySelector(".answer4-wrapper")
 let loading = [loadingPart1, loadingPart2, loadingPart3, loadingPart4, loadingPart5]
 //
 
@@ -66,3 +70,10 @@ function next(){
     loading[index].style.opacity = "1"
 }
 
+function checkAnswer(){
+    if (answer1.innerHTML === question.correct_answer){
+        answer1Btn.style.backgroundColor = "green"
+    } else {
+        answer1Btn.style.backgroundColor = "red"
+    }
+}

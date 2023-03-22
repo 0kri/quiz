@@ -71,15 +71,15 @@ function next(){
 }
 
 function checkAnswer1(){
-    if (answer1.innerHTML === question.correct_answer.toUpperCase()){
+    if (answer1.innerHTML == questions.correct_answer){
         answer1Btn.style.backgroundColor = "green"
-    } else {
+    } else if(answer4.innerHTML !== questions.correct_answer){
         answer1Btn.style.backgroundColor = "red"
     }
 } 
 
 function checkAnswer2(){
-    if (answer2.innerHTML === question.correct_answer){
+    if (answer2.innerHTML === questions.correct_answer){
         answer2Btn.style.backgroundColor = "green"
     } else {
         answer2Btn.style.backgroundColor = "red"
@@ -87,7 +87,7 @@ function checkAnswer2(){
 }
 
 function checkAnswer3(){
-    if (answer3.innerHTML === question.correct_answer){
+    if (answer3.innerHTML === questions.correct_answer){
         answer3Btn.style.backgroundColor = "green"
     } else {
         answer3Btn.style.backgroundColor = "red"
@@ -95,9 +95,9 @@ function checkAnswer3(){
 }
 
 function checkAnswer4(){
-    if (answer4.innerHTML === question.correct_answer){
+    if (answer4.innerHTML === questions.correct_answer){
         answer4Btn.style.backgroundColor = "green"
-    } else {
+    } else if(answer4.innerHTML !== question.correct_answer){
         answer4Btn.style.backgroundColor = "red"
     }
 }

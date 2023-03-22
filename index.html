@@ -16,7 +16,7 @@
         </div>
 
         <div class="question-wrapper">
-            <h1>Question</h1>
+            <h1 class="question">Question</h1>
         </div>
 
         <div class="answers-wrapper">
@@ -26,24 +26,28 @@
                 <div class="answer1-wrapper">
                     <label for="answer1" id="answer1"><div class="a-markbox">A</div></label>
                     <input type="radio" name="answer1" id="answer1">
+                    <p id="answer-1"></p>
                     <br>
                 </div>
 
                 <div class="answer2-wrapper">
                     <label for="answer2" id="answer2"><div class="b-markbox">B</div></label>
                     <input type="radio" name="answer2" id="answer2">
+                    <p id="answer-2"></p>
                     <br>
                 </div>
 
                 <div class="answer3-wrapper">
                     <label for="answer3" id="answer3"><div class="c-markbox">C</div></label>
                     <input type="radio" name="answer3" id="answer3">
+                    <p id="answer-3"></p>
                     <br>
                 </div>
 
                 <div class="answer4-wrapper">
                     <label for="answer4" id="answer4"><div class="d-markbox">D</div></label>
                     <input type="radio" name="answer4" id="answer4">
+                    <p id="answer-4"></p>
                 </div>
 
             </form>
@@ -52,12 +56,12 @@
             <div class="hidden-div"></div>
             
             <div class="total-count">
-                <h3>Question 5/5</h3>
+                <h3 id="count">Question 5/5</h3>
                 <div class="fill"></div>
             </div>
     
             <div class="next-question">
-                <button>NEXT QUESTION &#8594;</button>
+                <button class="btn" onclick="next()">NEXT QUESTION &#8594;</button>
             </div>
         </div>
     </div>
